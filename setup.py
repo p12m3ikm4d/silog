@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="silog",
-    version="0.1.0",
+    version="0.1.1",
     author="p12m3ikm4d",
     author_email="issue.no9@gmail.com",
     description="A simple logging library",
