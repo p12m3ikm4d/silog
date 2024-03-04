@@ -1,1 +1,1 @@
-from .silog import silog
+from .silog import Silog
