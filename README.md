@@ -14,3 +14,17 @@ You can install silog directly from PyPI:
 
 ```bash
 pip install silog
+```
+
+## Usage
+
+To use silog in your project, import the 'Silog' class and initialize it with your desired log directory.
+```python
+from silog import Silog
+
+# initialize logger
+logger = Silog("logs")
+
+# log message
+logger.info("log message")
+```
