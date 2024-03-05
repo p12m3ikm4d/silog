@@ -5,13 +5,13 @@ from datetime import datetime
 class Silog:
     _instance = None
 
-    def __new__(cls, logPath="logs", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"):
+    def __new__(cls, logPath="logs", level=logging.INFO, format="[%(asctime)s][%(levelname)s]%(message)s"):
         if cls._instance is None:
             cls._instance = super(Silog, cls).__new__(cls)
-            cls._instance.__init(logPath, level, format)
+            cls._instance.__initLogger(logPath, level, format)
         return cls._instance
 
-    def __init(self, logPath, level, format):
+    def __initLogger(self, logPath, level, format):
         self.__logPath = logPath
         self.__level = level
         self.__format = format
